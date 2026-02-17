@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useAuthStore } from '../store/useAuthStore';
 import BorderAnimatedContainer from '../components/BorderAnimatedContainer';
-import { LoaderIcon, MailIcon, MessageCircleIcon, UserIcon } from 'lucide-react';
+import { LoaderIcon, LockIcon, MailIcon, MessageCircleIcon, UserIcon } from 'lucide-react';
 import { Link } from 'react-router';
 
 function SignUpPage() {
@@ -63,7 +63,7 @@ function SignUpPage() {
                   <div>
                     <label className='auth-input-label'>Password</label>
                     <div className='relative'>
-                      <UserIcon className='auth-input-icon'/>
+                      <LockIcon className='auth-input-icon'/>
                       <input 
                         type="password"
                         value={formData.password}
