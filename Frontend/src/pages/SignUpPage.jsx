@@ -5,7 +5,7 @@ import { LoaderIcon, LockIcon, MailIcon, MessageCircleIcon, UserIcon } from 'luc
 import { Link } from 'react-router';
 
 function SignUpPage() {
-  const [formData, setFormData] = useState({fullname: "", email: "", password: ""});
+  const [formData, setFormData] = useState({fullName: "", email: "", password: ""});
   const { signup, isSigningUp } = useAuthStore();
 
   const handleSubmit = (e) => {
