@@ -42,6 +42,7 @@ function LoginPage() {
                         onChange={(e) => setFormData({...formData, email: e.target.value})} 
                         className='input'
                         placeholder='johndoe@gmail.com'
+                        autoComplete='email'
                       />
                     </div>
                   </div>
@@ -57,6 +58,7 @@ function LoginPage() {
                         onChange={(e) => setFormData({...formData, password: e.target.value})} 
                         className='input'
                         placeholder='Enter your password'
+                        autoComplete='current-password'
                       />
                     </div>
                   </div>
