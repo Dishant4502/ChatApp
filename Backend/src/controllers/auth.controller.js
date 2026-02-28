@@ -60,7 +60,7 @@ export const login = async (req,res) => {
     const {email,password} = req.body;
 
     if(!email||!password){
-        res.status(400).json({message: "email and password are required"});
+        return res.status(400).json({message: "email and password are required"});
     }
 
     try{
